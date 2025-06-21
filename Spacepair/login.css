@@ -1,0 +1,94 @@
+/* Make background green and center everything */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #092016;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Wrapper styles for form box */
+.wrapper {
+  background: #0d2d1f; /* optional: translucent box */
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Spacepair heading yellow */
+h1 {
+  color: #f7c600;
+  text-align: center ;
+  margin-bottom: 15px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain; /* Keeps image proportionate */
+  vertical-align: middle ;
+}
+
+/* Inputs styling */
+.input-box input {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Login button: yellow background, black text */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #f7c600;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Forgot password link white */
+a {
+  display: block;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+/* Register button styled */
+.register-btn {
+  display: block;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  text-decoration: underline;
+
+}
+
+.register-btn:hover {
+  opacity: 0.9;
+}
+
+
+/*a:hover {
+  text-decoration: underline;
+}*/
