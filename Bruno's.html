@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpacePair - Find A Roommate</title>
+    <link rel="stylesheet" href="home2nd.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="aww.jpg" alt="SpacePair Logo" class="logo-icon" width="50" height="50" />
+        </div>
+        <h1>SPACEPAIR</h1>
+        <button class="cta-btn">Find A House</button>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Find A Roommate That Suits You</h1>
+            <p>Want to find a home Roommate? We are ready to help you find one that suits your lifestyle and needs</p>
+            <button class="get-started">Get Started</button>
+            <div class="stats">
+                <span><strong>1200+</strong> matched Roomies</span>
+                <span><strong>4500+</strong> Happy Customers</span>
+                <span><strong>100+</strong> Awards</span>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="house.jpg" alt="Modern building" />
+        </div>
+    </section>
+
+    <section class="search-box">
+        <input type="text" placeholder="Location" />
+        <select><option>Property Type</option></select>
+        <input type="text" placeholder="Budget" />
+        <button onclick="searchNow()">Search Now</button>
+    </section>
+
+    <section class="popular">
+        <h2>Our Popular Homes</h2>
+        <div class="properties">
+            <div class="property">
+                <img src="house1.jpg" alt="Banana Island" />
+                <p><strong>Banana Island, Lagos</strong></p>
+                <p>4 Bed | 10x10 m | 1600 m²</p>
+                <p>₦100,000,000</p>
+                <button onclick="bookNow('Banana Island')">Book Now</button>
+            </div>
+            <div class="property">
+                <img src="house2.jpg" alt="Parkview Estate" />
+                <p><strong>Parkview Estate, Lagos</strong></p>
+                <p>5 Bed | 10x10 m | 1600 m²</p>
+                <p>₦200,000,000</p>
+                <button onclick="bookNow('Parkview Estate')">Book Now</button>
+            </div>
+            <div class="property">
+                <img src="house3.jpg" alt="Eko Atlantic" />
+                <p><strong>Eko Atlantic, Lagos</strong></p>
+                <p>3 Bed | 10x10 m | 1600 m²</p>
+                <p>₦500,000,000</p>
+                <button onclick="bookNow('Eko Atlantic')">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>"Our business is built off of close relationships and we are glad that we are able to share our positive real estate experiences with our clients."</p>
+        <p>Code Covenant, Founders</p>
+        <div class="partners">
+            <span>EQUINIX</span>
+            <span>DIGITAL REALTY</span>
+            <span>EQUINIX</span>
+            <span>DIGITAL REALTY</span>
+        </div>
+    </footer>
+
+    <script>
+        function searchNow() {
+            alert("Search function is not implemented yet.");
+        }
+
+        function bookNow(location) {
+            alert("Booking requested for " + location);
+        }
+    </script>
+</body>
+</html>
