@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apartment Search</title>
+  <link rel="stylesheet" href="home2nd.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <img src="aww.jpg" alt="SpacePair Logo" class="logo-icon" width="50" height="50" />
+      </div>
+      <div class="menu" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <div id="dropdownMenu" class="dropdown-hidden">
+       <ul>
+         <li><a href="home.html">Home</a></li>
+         <li><a href="search.html">Search</a></li>
+         <li><a href="profile.html">Profile</a></li>
+         <li><a href="login.html">Logout</a></li>
+       </ul>
+    </div>
+
+    <h1>HOME</h1>
+  </header>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const dropdownMenu = document.getElementById("dropdown-menu");
+
+    menuToggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      dropdownMenu.classList.toggle("show");
+    });
+
+    window.addEventListener("click", function () {
+      dropdownMenu.classList.remove("show");
+    });
+  </script>
+
+  <section class="search-section">
+    <h2>Search</h2>
+    <input type="text" placeholder="Durban, Central, 4001" />
+    <button>Search</button>
+  </section>
+
+  <section class="results-section">
+    <h2>Results</h2>
+    <div class="filter-buttons">
+      <button>Filters</button>
+      <button>Gender Preference</button>
+    </div>
+
+    <div class="listing">
+      <img src="https://via.placeholder.com/100x100" alt="Apartment Image" />
+      <div class="details">
+        <p class="title">Sunny Apartment</p>
+        <p class="price">R 6,00/mo</p>
+        <p class="location">Durban, Central 4001</p>
+      </div>
+    </div>
+
+    <div class="listing">
+      <img src="https://via.placeholder.com/100x100" alt="Apartment Image" />
+      <div class="details">
+        <p class="title">Sunny Apartment</p>
+        <p class="price">R 6,00/mo</p>
+        <p class="location">Durban, Central 4001</p>
+      </div>
+    </div>
+
+    
+    <div class="listing">
+      <img src="https://via.placeholder.com/100x100" alt="Apartment Image" />
+      <div class="details">
+        <p class="title">Sunny Apartment</p>
+        <p class="price">R 6,00/mo</p>
+        <p class="location">Durban, Central 4001</p>
+      </div>
+    </div>
+
+    <div class="listing">
+      <img src="https://via.placeholder.com/100x100" alt="Apartment Image" />
+      <div class="details">
+        <p class="title">Sunny Apartment</p>
+        <p class="price">R 6,00/mo</p>
+        <p class="location">Durban, Central 4001</p>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
